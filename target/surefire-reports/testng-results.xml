@@ -1,11 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15" started-at="2019-07-22T11:04:26Z" finished-at="2019-07-22T11:04:26Z">
+  <suite name="Suite" duration-ms="31702" started-at="2019-07-25T09:48:28Z" finished-at="2019-07-25T09:49:00Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner@61a485d2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="15" started-at="2019-07-22T11:04:26Z" finished-at="2019-07-22T11:04:26Z">
+    <test name="Test" duration-ms="31702" started-at="2019-07-25T09:48:28Z" finished-at="2019-07-25T09:49:00Z">
+      <class name="runners.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner@61a485d2]" name="setUpClass" is-config="true" duration-ms="253" started-at="2019-07-25T09:48:28Z" finished-at="2019-07-25T09:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner@61a485d2]" name="runScenario" duration-ms="31095" started-at="2019-07-25T09:48:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-07-25T09:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create new customer registration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["New Customer Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner@61a485d2]" name="runScenario" duration-ms="11" started-at="2019-07-25T09:49:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-07-25T09:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Existing user sucessful login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Existing User Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BAT04113L', ip: '10.196.162.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BAT04113L', ip: '10.196.162.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at pageobjects.HomePageSignUp.setUrl(HomePageSignUp.java:23)
+at stepdefs.NewCustRegistration.php_travel_homepage_open(NewCustRegistration.java:20)
+at ✽.PHP Travel homepage open(file:src/test/resources/features/UserLogin.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@61a485d2]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2019-07-25T09:49:00Z" finished-at="2019-07-25T09:49:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
