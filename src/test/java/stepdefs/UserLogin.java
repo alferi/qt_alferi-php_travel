@@ -13,6 +13,7 @@ public class UserLogin {
 	HomePageLogin hpl = new HomePageLogin();
 	LoginPage lp = new LoginPage();
 	
+//	    }
 	
     @When("^User click login menu$")
     public void user_click_sign_in_menu() throws Throwable {
@@ -30,9 +31,9 @@ public class UserLogin {
         lp.LoginBtn();
     }
     
-    @Then("^Verify my login page open$")
+    @Then("^Verify my login page is displayed$")
     public void verify_my_account_page_open() throws Throwable {
-        throw new PendingException();
+       
     }
 	
 

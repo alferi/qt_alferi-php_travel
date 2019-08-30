@@ -17,7 +17,7 @@ public abstract class ABasePageObjects {
 		protected WebDriverWait wait ; 
     
     protected WebDriver getDriver() {
-        return WebDriverFactory.getInstance().getWebDriver();
+        return WebDriverFactory.driver;
     }
 	
     protected void initObjects(Object childPage) {

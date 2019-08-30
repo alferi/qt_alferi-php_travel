@@ -3,10 +3,10 @@ package stepdefs;
 import io.cucumber.java.After;
 import utils.WebDriverFactory;
 
-public class Hook {
+public class Hooks {
 	
 	@After
     public void afterScenario(){
-		WebDriverFactory.getInstance().removeDriver();
+		WebDriverFactory.removeDriver();
 	}
 }

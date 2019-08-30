@@ -1,11 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.25 s <<< FAILURE! - in TestSuite
-runScenario(runners.TestRunner)  Time elapsed: 0.031 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-Session ID is null. Using WebDriver after calling quit()?
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.658 s <<< FAILURE! - in TestSuite
+runScenario(runners.TestRunner)  Time elapsed: 18.734 s  <<< FAILURE!
+org.openqa.selenium.ElementNotVisibleException: 
+element not interactable
+  (Session info: chrome=76.0.3809.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BAT04113L', ip: '10.196.162.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
-Driver info: driver.version: RemoteWebDriver
+System info: host: 'BAT04113L', ip: '10.196.162.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ALFERI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58714}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: 5e7be0cb5ea2e8edf86362b2f48a0c9c
 
